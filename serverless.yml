@@ -1,17 +1,19 @@
 service: serverless-practical-feb22
-frameworkVersion: 3
+frameworkVersion: '3'
 
 provider:
   name: aws
   runtime: nodejs18.x
+  region: ap-southeast-1
 
-function:
+functions:
   api:
     handler: index.handler
-    event:
+    events:
       - httpApi:
           path: /
           method: get
 
 plugins:
   - serverless-offline
+  
