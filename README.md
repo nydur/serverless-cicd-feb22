@@ -1,1 +1,1 @@
-# serverless-practical-feb23
+# CICD Serverless Practical (Feb 23)
