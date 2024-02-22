@@ -4,3 +4,14 @@ frameworkVersion: 3
 provider:
   name: aws
   runtime: nodejs18.x
+
+function:
+  api:
+    handler: index.handler
+    event:
+      - httpApi:
+          path: /
+          method: get
+
+plugins:
+  - serverless-offline
