@@ -2,7 +2,7 @@
 
 Sample repository for assignment with practical walkthrough on Feb 22
 
-Note: `index.js` have been updated for a practical walkthrough on Mar 5
+Note: `index.js` have been updated for a practical walkthrough on Mar 5, refer to last header
 
 ---
 
