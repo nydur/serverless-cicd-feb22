@@ -2,6 +2,8 @@
 
 Sample repository for assignment with practical walkthrough on Feb 22
 
+Note: `index.js` have been updated for a practical walkthrough on Mar 5
+
 ---
 
 ## Main assignment objective
@@ -78,4 +80,24 @@ Replace `input: event`
 
 - Update CICD Github Actions workflow
 
-Create `main.yml` to auto deploy to serverless platform
+Create `main.yml` to deploy to serverless platform with workflow
+
+## Additional practical
+
+`index.js` content prior to Mar 5 CloudWatch application logging practical walkthrough
+
+```json
+module.exports.handler = async (event) => {
+    return {
+      statusCode: 200,
+      body: JSON.stringify(
+        {
+          message: "THIS IS OUR HTTP RESPONSE!",
+          input: event,
+        },
+        null,
+        2
+      ),
+    };
+  };
+  ```
